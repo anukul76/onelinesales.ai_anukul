@@ -1,0 +1,6 @@
+select d.name as DEPT_NAME, avg(s.amt_usd) as AVG_MONTH_SALARY
+from departments d
+join employees e on d.id = e.dept_id
+join salaries s on e.id = s.emp_id
+group by d.id, d.name 
+order by avg_monthly_salary desc fetch first 3 rows only; 
