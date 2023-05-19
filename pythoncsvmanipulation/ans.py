@@ -17,7 +17,7 @@ top_3_departments = sorted_df.head(3)
 
 
 #rename the column
-top_3_departments = top_3_departments.rename(columns={'name': 'DEPT_NAME', 'amt_usd': 'AVG_MONTH_SALARY'})
+top_3_departments = top_3_departments.rename(columns={'NAME_dept': 'DEPT_NAME', 'AMT (USD)': 'AVG_MONTH_SALARY'})
 
 #Display the result
 print(top_3_departments)
